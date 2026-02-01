@@ -1,1 +1,134 @@
-write contact information here.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Victory Sports Club</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            float: right;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header .current a {
+            color: #0779e4;
+            font-weight: bold;
+        }
+        #main-content {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+        }
+        .contact-info, .contact-form {
+            width: 48%;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .contact-form form input, .contact-form form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 0;
+            background-color: #0779e4;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Victory</span> Sports Club</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a href="../team/team.html">Teams</a></li>
+                    <li class="current"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container" id="main-content">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <h3>Our Location</h3>
+            <p>123 Victory Lane<br>Sportsville, SP 45678</p>
+            <h3>Email</h3>
+            <p>contact@victorysports.com</p>
+            <h3>Phone</h3>
+            <p>(123) 456-7890</p>
+        </div>
+        <div class="contact-form">
+            <h3>Send us a Message</h3>
+            <form>
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea name="message" placeholder="Your Message" rows="5"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Victory Sports Club, Copyright &copy; 2023</p>
+    </footer>
+</body>
+</html>
