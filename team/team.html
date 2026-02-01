@@ -3,18 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team</title>
+    <title>Our Team | Victory Sports Club</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
+            line-height: 1.6;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        .header {
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            float: right;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header .current a {
+            color: #0779e4;
+            font-weight: bold;
+        }
+        .header-text {
             text-align: center;
             margin-bottom: 40px;
+            margin-top: 20px;
         }
         .team-container {
             display: flex;
@@ -29,6 +69,7 @@
             width: 280px;
             text-align: center;
             padding: 20px;
+            margin-bottom: 20px;
         }
         .team-member img {
             width: 120px;
@@ -44,44 +85,72 @@
             margin: 0;
             color: #666;
         }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+            clear: both;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Victory</span> Sports Club</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li class="current"><a href="team.html">Teams</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <div class="header">
-        <h1>Meet Our Athletic Team</h1>
-        <p>The dedicated individuals driving our success on the field.</p>
+    <div class="container">
+        <div class="header-text">
+            <h1>Meet Our Athletic Team</h1>
+            <p>The dedicated individuals driving our success on the field.</p>
+        </div>
+
+        <div class="team-container">
+            <div class="team-member">
+                <img src="https://placehold.co/120x120/EFEFEF/333?text=AJ" alt="Team Member 1">
+                <h3>Alex Johnson</h3>
+                <p>Head Coach</p>
+                <p>Alex leads the team with strategic vision and passion.</p>
+            </div>
+
+            <div class="team-member">
+                <img src="https://placehold.co/120x120/EFEFEF/333?text=MG" alt="Team Member 2">
+                <h3>Maria Garcia</h3>
+                <p>Star Player</p>
+                <p>Maria is our top scorer and a key player on the field.</p>
+            </div>
+
+            <div class="team-member">
+                <img src="https://placehold.co/120x120/EFEFEF/333?text=SL" alt="Team Member 3">
+                <h3>Sam Lee</h3>
+                <p>Team Captain</p>
+                <p>Sam inspires the team and leads by example during every match.</p>
+            </div>
+
+            <div class="team-member">
+                <img src="https://placehold.co/120x120/EFEFEF/333?text=CG" alt="Team Member 4">
+                <h3>Chris Green</h3>
+                <p>Fitness Coach</p>
+                <p>Chris ensures the team is in peak physical condition.</p>
+            </div>
+        </div>
     </div>
 
-    <div class="team-container">
-        <div class="team-member">
-            <img src="https://placehold.co/120x120/EFEFEF/333?text=AJ" alt="Team Member 1">
-            <h3>Alex Johnson</h3>
-            <p>Head Coach</p>
-            <p>Alex leads the team with strategic vision and passion.</p>
-        </div>
-
-        <div class="team-member">
-            <img src="https://placehold.co/120x120/EFEFEF/333?text=MG" alt="Team Member 2">
-            <h3>Maria Garcia</h3>
-            <p>Star Player</p>
-            <p>Maria is our top scorer and a key player on the field.</p>
-        </div>
-
-        <div class="team-member">
-            <img src="https://placehold.co/120x120/EFEFEF/333?text=SL" alt="Team Member 3">
-            <h3>Sam Lee</h3>
-            <p>Team Captain</p>
-            <p>Sam inspires the team and leads by example during every match.</p>
-        </div>
-
-        <div class="team-member">
-            <img src="https://placehold.co/120x120/EFEFEF/333?text=CG" alt="Team Member 4">
-            <h3>Chris Green</h3>
-            <p>Fitness Coach</p>
-            <p>Chris ensures the team is in peak physical condition.</p>
-        </div>
-    </div>
-
+    <footer>
+        <p>Victory Sports Club, Copyright &copy; 2023</p>
+    </footer>
 </body>
 </html>
